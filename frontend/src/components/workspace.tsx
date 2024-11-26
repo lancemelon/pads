@@ -19,6 +19,8 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
     "Output",
   ]);
 
+  const [codeOut, setCodeOut] = useState("");
+
   const updateTools = (index: number, newTool: IconKey) => {
     const updatedTools = tools.map((tool, i) => (i === index ? newTool : tool));
     setTools(updatedTools);
@@ -35,7 +37,10 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
             <WorkSpacePanel
               panelId={0}
               component={tools[0]}
+              lesson={curLesson}
               setComponent={updateTools}
+              setCodeOut={setCodeOut}
+              codeOut={codeOut}
             />
           </ResizablePanel>
           <ResizableHandle withHandle />
@@ -46,6 +51,8 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
                 component={tools[1]}
                 lesson={curLesson}
                 setComponent={updateTools}
+                setCodeOut={setCodeOut}
+                codeOut={codeOut}
               />
             </div>
           </ResizablePanel>
@@ -56,7 +63,10 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
         <WorkSpacePanel
           panelId={2}
           component={tools[2]}
+          lesson={curLesson}
           setComponent={updateTools}
+          setCodeOut={setCodeOut}
+          codeOut={codeOut}
         />
       </ResizablePanel>
     </ResizablePanelGroup>

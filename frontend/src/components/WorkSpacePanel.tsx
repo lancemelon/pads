@@ -8,9 +8,11 @@ type IconKey = "ChatBot" | "CodeEditor" | "Notes" | "Output";
 // Define the expected props for each component
 type ComponentProps = {
   ChatBot: {}; // ChatBot props (if any)
-  CodeEditor: {}; // CodeEditor props (if any)
+  CodeEditor: {
+    setCodeOut: React.Dispatch<React.SetStateAction<string>> | undefined;
+  }; // CodeEditor props (if any)
   Notes: { curLesson: number }; // Notes expects curLesson prop
-  Output: {}; // Output props (if any)
+  Output: { codeOut: string | undefined }; // Output props (if any)
 };
 
 interface WSPProps {
@@ -18,6 +20,8 @@ interface WSPProps {
   component: IconKey;
   setComponent: (index: number, newTool: IconKey) => void;
   lesson?: number;
+  setCodeOut?: React.Dispatch<React.SetStateAction<string>> | undefined;
+  codeOut?: string | undefined;
 }
 
 const WorkSpacePanel = ({
@@ -25,6 +29,8 @@ const WorkSpacePanel = ({
   lesson,
   setComponent,
   panelId,
+  setCodeOut,
+  codeOut,
 }: WSPProps) => {
   const [CurComp, setCurComp] = useState<React.FC<
     ComponentProps[typeof component]
@@ -58,6 +64,10 @@ const WorkSpacePanel = ({
       switch (component) {
         case "Notes":
           return <CurComp curLesson={lesson || 0} />;
+        case "CodeEditor":
+          return <CurComp setCodeOut={setCodeOut} />;
+        case "Output":
+          return <CurComp codeOut={codeOut} />;
         default:
           return <CurComp />;
       }
