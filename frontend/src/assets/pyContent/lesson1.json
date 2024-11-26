@@ -1,0 +1,15 @@
+{
+  "title": "Chapter 2: Basic Features",
+  "modules": [
+    {
+      "module_title": "Variables and Data Types",
+      "content": "Variables are containers to store information throughout the entirety of your program. Unlike other programs Python doesn't require you to state data types, simply define the variable and use the ```=``` operator to assign its value. To keep standard and readability naming variables requries you to follow rules.<br>These include:<br> - Meaningful names<br>- Consistent Casing (Camel Case, Pascal Case, etc.)<br>- Cannot start with number<br>- More rules can be found here (https://www.w3schools.com/python/gloss_python_variable_names.asp)<br><br>While types aren't specified the basic data types are still used under the hood. The most commonly used data types are: ```int``` ```float``` ```str``` ```bool```. Python doesn't have the ```null``` keyword, rather it uses ```None```. ```int``` refers to common integers, ```float``` is used for floating point number, ```str``` is for sequences of characters, and ```bool``` is used for ```True``` or ```False``` values.<br><br> Type checking can also be useful to avoid errors. The built in ```type()``` method allows you to check the type of a variable. Casting allows you implicitly change the type of a variable (with restrictions) using the built in functions. ```int()``` for int casting, ```float()``` for floats, and ```str()``` for strings.<br><br>Use the code editor to create variables and use the built in functions to see them in action."
+    },
+    {
+      "module_title": "Basic Operators",
+      "content": "Basic operators fall into 3 categories: arithmetic, comparison, and logical. There is also the assignment operator, ```=```, used to assign values to variables.<br><br>Arithmetic:<br>- ```+``` addition allows you to add variables.<br>- ```-``` subtractions allows you to subtract variables.<br>- ```*``` star allows you to multiply variables.<br>- ```/``` forward slash allows you to divide variables.<br>- ```//``` double forward slash allows you to divide with integral result (discard remainder).<br>- ```%``` percentage allows you to return the remainder of dividing variables.<br>- ```**``` double star is the built in exponential operator.<br><br>Comparison:<br>- ```==``` checks for equality.<br>- ```!=``` checks for inequality.<br>- ```<``` checks whether left value is smaller than right value.<br>- ```>``` checks whether left value is larger than right value.<br>- ```<=``` checks whether left value is smaller or equal to right value.<br>- ```>=``` checks whether left value is greater or equal to right value.<br><br>Logical:<br>- ```and``` returns ```True``` if both conditions are met.<br>- ```or``` returns ```True``` if at least 1 condition is met.<br>- ```not``` returns opposite bool value.<br><br>There are restrictions with some of these operators, use the code editor to try and find restrictions or unnatural behavior."
+    }
+  ],
+  "exercise": "",
+  "answer": ""
+}

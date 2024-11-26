@@ -1,0 +1,19 @@
+{
+  "title": "Chapter 1: Intro to Python",
+  "modules": [
+    {
+      "module_title": "What is Python?",
+      "content": "Python is a high level interpreted language. High level meaning, a lot of the internal processes of the computer are abstracted away. Interpreted meaning, instead of the your file being compiled directly into machine code an interpreter translates your code line-by-line at run time. Python is all about readability, no matter your background anyone should be able to look at your Python code and understand it (for the most part) just like natural language."
+    },
+    {
+      "module_title": "Getting Started",
+      "content": "To get started with Python you must first set-up an environment on your computer with the interpreter. It can easily be set up by downloading it from the Python website (https://python.org). Workspaces such as IDE's (integrated development environments), and text-editors can be used in partner with the interpreter to write and test code. A popular IDE is VSCode which I recommend over other IDE's and text-editors. There are also dedicated Python IDE's like pyCharm. Also, since Python is interpreted you can run your code in a Python notebook. This allows you to run code blocks one by one, which is especially useful in scientific uses. Popular notebooks are Jupyter Notebooks and Google-Colab. (on the left there is a work-space provided to code along, still make sure to setup your environment correctly)."
+    },
+    {
+      "module_title": "Syntax",
+      "content": "Python syntax is clean and emphasizes readability. Unlike many other programming languages, Python uses indentation to define code blocks instead of curly braces. For example, a simple if-else statement in Python looks like this:\n\n```python\nif 5 > 3:\n    print(\"5 is greater than 3\")\nelse:\n    print(\"3 is greater or equal to 5\")\n```\nPython also uses straightforward keywords and avoids semicolons, making it easy to write and debug. As you will see throughout this course keywords are used to make reading the code as simple as possible. When trying to find solutions I like to remeber that whatever I want to do is probably a keyword (or function) and I can just call it. Tell the computer to do something and it will do it."
+    }
+  ],
+  "exercise": "Print Hello World.",
+  "answer": "print(\"Hello World\")"
+}

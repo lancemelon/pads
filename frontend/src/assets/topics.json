@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Python",
+    "logo": "/python.png",
+    "category": "Programming Language"
+  },
+  {
+    "name": "Machine Learning",
+    "logo": "/deep-learning.png",
+    "category": "A.I."
+  },
+  {
+    "name": "Tennis",
+    "logo": "/tennis-ball.png",
+    "category": "Sports"
+  }
+]
