@@ -2,6 +2,8 @@ import { Textarea } from "../ui/textarea";
 import { Button } from "../ui/button";
 import { Send } from "lucide-react";
 import { useState } from "react";
+import MarkdownRenderer from "../MarkdownRenderer";
+import "../../markdown.css";
 import axios from "axios";
 
 const ChatBot = () => {
@@ -33,7 +35,9 @@ const ChatBot = () => {
   return (
     <div className="flex flex-col justify-between h-full">
       <div className="flex justify-center items-center h-full">
-        <p>{text}</p>
+        <p>
+          <MarkdownRenderer content={text} />
+        </p>
       </div>
       <div className="flex flex-row items-center justify-end w-full gap-2 p-4 mt-auto">
         <Textarea

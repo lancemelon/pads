@@ -34,14 +34,16 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
       <ResizablePanel defaultSize={75}>
         <ResizablePanelGroup direction="horizontal">
           <ResizablePanel defaultSize={50} maxSize={80}>
-            <WorkSpacePanel
-              panelId={0}
-              component={tools[0]}
-              lesson={curLesson}
-              setComponent={updateTools}
-              setCodeOut={setCodeOut}
-              codeOut={codeOut}
-            />
+            <div className="h-full overflow-y-auto">
+              <WorkSpacePanel
+                panelId={0}
+                component={tools[0]}
+                lesson={curLesson}
+                setComponent={updateTools}
+                setCodeOut={setCodeOut}
+                codeOut={codeOut}
+              />
+            </div>
           </ResizablePanel>
           <ResizableHandle withHandle />
           <ResizablePanel defaultSize={50} className="h-full">
@@ -60,14 +62,16 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
       </ResizablePanel>
       <ResizableHandle withHandle />
       <ResizablePanel defaultSize={25}>
-        <WorkSpacePanel
-          panelId={2}
-          component={tools[2]}
-          lesson={curLesson}
-          setComponent={updateTools}
-          setCodeOut={setCodeOut}
-          codeOut={codeOut}
-        />
+        <div className="h-full overflow-y-auto">
+          <WorkSpacePanel
+            panelId={2}
+            component={tools[2]}
+            lesson={curLesson}
+            setComponent={updateTools}
+            setCodeOut={setCodeOut}
+            codeOut={codeOut}
+          />
+        </div>
       </ResizablePanel>
     </ResizablePanelGroup>
   );
