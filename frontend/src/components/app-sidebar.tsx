@@ -82,6 +82,7 @@ const data = {
 
 function AppSidebar({
   setCurLesson,
+  curLesson,
   ...props
 }: React.ComponentProps<typeof Sidebar>) {
   return (
@@ -91,7 +92,11 @@ function AppSidebar({
         <TeamSwitcher topics={data.topics} />
       </SidebarHeader>
       <SidebarContent>
-        <NavMain items={data.navMain} setCurLesson={setCurLesson} />
+        <NavMain
+          items={data.navMain}
+          setCurLesson={setCurLesson}
+          curLesson={curLesson}
+        />
         {/* TODO: Change to saved files (later down the road) */}
         <NavProjects projects={data.saved} />
       </SidebarContent>

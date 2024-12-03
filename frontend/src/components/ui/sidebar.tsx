@@ -163,6 +163,7 @@ const Sidebar = React.forwardRef<
     variant?: "sidebar" | "floating" | "inset";
     collapsible?: "offcanvas" | "icon" | "none";
     setCurLesson?: React.Dispatch<React.SetStateAction<number>>;
+    curLesson?: number;
   }
 >(
   (

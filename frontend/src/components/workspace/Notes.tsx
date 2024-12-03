@@ -2,6 +2,13 @@ import MarkdownRenderer from "../MarkdownRenderer";
 import "../../markdown.css";
 import { useState, useEffect } from "react";
 
+/* 
+--------------------------TODO-------------------------------------
+Instead of sending curLesson from grandparent just get the url from
+the pyLessons file. Better for transition to database rather than 
+local files for lesson content.
+*/
+
 interface Module {
   module_title: string;
   content: string;

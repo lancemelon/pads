@@ -33,7 +33,7 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
     >
       <ResizablePanel defaultSize={75}>
         <ResizablePanelGroup direction="horizontal">
-          <ResizablePanel defaultSize={50} maxSize={80}>
+          <ResizablePanel defaultSize={20} maxSize={80}>
             <div className="h-full overflow-y-auto">
               <WorkSpacePanel
                 panelId={0}
@@ -46,7 +46,7 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
             </div>
           </ResizablePanel>
           <ResizableHandle withHandle />
-          <ResizablePanel defaultSize={50} className="h-full">
+          <ResizablePanel defaultSize={80} className="h-full">
             <div className="h-full overflow-y-auto">
               <WorkSpacePanel
                 panelId={1}

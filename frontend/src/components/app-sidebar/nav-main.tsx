@@ -21,6 +21,7 @@ import {
 export function NavMain({
   items,
   setCurLesson,
+  curLesson,
 }: {
   items: {
     title: string;
@@ -34,6 +35,7 @@ export function NavMain({
     }[];
   }[];
   setCurLesson?: React.Dispatch<React.SetStateAction<number>>;
+  curLesson?: number;
 }) {
   return (
     <SidebarGroup>
@@ -61,6 +63,9 @@ export function NavMain({
                             console.log("current lesson: " + subItem.index);
                           }
                         }}
+                        className={`hover:bg-neutral-300 focus:bg-neutral-300 active:bg-neutral-300 bg-none ${
+                          curLesson === subItem.index ? "bg-neutral-300" : ""
+                        }`}
                       >
                         <a href={subItem.url}>
                           <span>{subItem.title}</span>
