@@ -2,15 +2,15 @@
   "title": "Chapter 6: Functions",
   "modules": [
     {
-      "module_title": "What is Python?",
-      "content": ""
+      "module_title": "Overview",
+      "content": "Up until now we have been leveraging built-in functions. We have been treating them as black-boxes that can achieve certian tasks. In this chapter we will go over what these functions are, why we should use functions and how to create our own functions. We pretty much have all of the basic building blocks to create complex programs in Python."
     },
     {
-      "module_title": "Hello World!",
-      "content": ""
+      "module_title": "What are Functions. Why?",
+      "content": "Functions are specific blocks of code that perform specific tasks. When writing complex programs we often repeat code in different parts of our program, your code can get messy if you have repeated complex logic. Having a pre-defined function you can call through out your program helps with readability and structure.<br><br>The structure of a function can be broken down into the ```definition```, ```parameters```, ```logic```, and ```return data```. When defining a function the naming is important, having a descriptive name allows the function to be used correctly through out your code. Parameters are pieces of data we pass into the function. Being able to pass custom data into functions allow the output to be more useful in many situations. The encapsulation of the logic in your function is important, so make sure you add as much logic related to your function. Finally, the returned data makes your functions more useful outside of the logic.<br><br>The only reqired components of a function is the definition and the logic, having parameters and returned data makes functions useful in different scenarios.<br><br>Functions may seem pointless because in reality re-writing logic when necessary is essentially the same as writing functions that can be called through-out. But, imagine if we had to write the ```range(len())``` logic every time we wrote a loop. The repetition can get out of hand and unreadable. Now imagine we wanted to change the logic a bit for that function, we would have to re-write the logic every where we used it. Having functions cleans up our code, makes maintaince easier, and makes our lives as developers less of a pain."
     },
     {
-      "module_title": "Syntax",
+      "module_title": "Creating our own",
       "content": ""
     }
   ],

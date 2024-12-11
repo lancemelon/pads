@@ -6,22 +6,22 @@
   },
   {
     "index": 1,
-    "title": "Basics Part 1",
+    "title": "Operators and I/O",
     "url": "#"
   },
   {
     "index": 2,
-    "title": "Basics Part 2",
+    "title": "Conditionals and Loops",
     "url": "#"
   },
   {
     "index": 3,
-    "title": "Operators",
+    "title": "Data Structures",
     "url": "#"
   },
   {
     "index": 4,
-    "title": "Control Flow",
+    "title": "Using Data Structures",
     "url": "#"
   },
   {
@@ -31,42 +31,7 @@
   },
   {
     "index": 6,
-    "title": "Data Structures",
-    "url": "#"
-  },
-  {
-    "index": 7,
     "title": "Modules and Libraries",
-    "url": "#"
-  },
-  {
-    "index": 8,
-    "title": "File Handling",
-    "url": "#"
-  },
-  {
-    "index": 9,
-    "title": "Error Handling",
-    "url": "#"
-  },
-  {
-    "index": 10,
-    "title": "Object-Oriented Programming (OOP) Basics",
-    "url": "#"
-  },
-  {
-    "index": 11,
-    "title": "Introduction to Libraries and Frameworks",
-    "url": "#"
-  },
-  {
-    "index": 12,
-    "title": "Working with APIs and JSON",
-    "url": "#"
-  },
-  {
-    "index": 13,
-    "title": "Debugging and Problem Solving",
     "url": "#"
   }
 ]
