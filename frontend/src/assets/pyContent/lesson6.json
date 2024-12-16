@@ -2,16 +2,24 @@
   "title": "Chapter 7: Modules and Libraries",
   "modules": [
     {
-      "module_title": "What is Python?",
-      "content": ""
+      "module_title": "Overview",
+      "content": "Last chapter we went over functions, we learnt that they allow us to bundle code to be ran any where in our code. In this chapter we will learn about functions that are packaged and can be downloaded by anyone to use. These are called ```modules``` and we can use them in our code. A collection of these modules are called ```libraries``` and we can download these using special commands."
     },
     {
-      "module_title": "Hello World!",
-      "content": ""
+      "module_title": "What are Modules and Libraries?",
+      "content": "***Modules:***<br>A module is a file containing Python code, typically functions, classes, or variables, that you can reuse in other Python programs. Python provides many built-in modules, and you can create your own.<br><br>***Libraries:***<br>A library is a collection of related modules. Libraries are often created to provide specialized functionality, such as working with data, web development, or image processing.<br><br>Using libraries have many advantages over creating your own functions. They are usually tested and optimized so the functions run very efficiently and does not cause any errors. Also, the people behind these libraries are very skilled and maintain them very well (at-least for popular libraries), meaning they will follow the most up-to-date techniques improving your program."
     },
     {
-      "module_title": "Syntax",
-      "content": ""
+      "module_title": "Using Modules and Libraries",
+      "content": "Python has specific keywords to use libraries in your code. These are ```import```, ```from```, and ```as```.<br><br>```import````:<br>Import is used to 'import' specific libraries and modules into your program. Importing allows you to use the functions in the module just as you would use regular user-defined functions. Usually your IDE will give you a list of all of the functions if you type ```nameoflibrary.```, or you can read the documentation.\n```python\n# math is a built in module in python\nimport math\n\nres = math.sqrt(16)\nprint(res)\n```\nImporting all module and libraries at the top of your code is best practice to avoid unwanted results.<br><br>```from```:<br>The from keyword allows us to import specific items from either libraries or modules. If we use ```from``` with a module we will be able to import specific functions or variables, if we use it with libraries we will be able to import specific modules.\n```python\n# math as specific functions and variables, sqrt and pi\n\nprint(pi)\nprint(sqrt(25))\n```\nIf we import a module or library the variable and function names will be taken, so we cannot use those names to create our own variable or function. It's best to only import the specific function, variable, or module that we want to use so that specific names won't be taken.<br><br>```as```:<br>The as keyword allows us to rename the items we import. As stated earlier we can come across naming overlaps so using renaming things can benifit us, especially if we are importing into a pre-existing code base.\n```python\n# We can rename math to something sorter like m\nimport math as m\n\nprint(m.sqrt(25))\n```\nWe can also rename functions, and variables."
+    },
+    {
+      "module_title": "Installing Libraries in Python",
+      "content": "***pip:***<br>Python uses the ```pip``` installer to download and manage Python libraries. Pip comes with Python and we interact with it in the terminal. There are 2 versions, ```pip``` and ```pip3```, both do the same thing but pip3 is only used if you have Python3 installed.<br><br>To install libraries we do:<br>```pip install library_name```<br>After that we will be able to import the library into our code and use the functions."
+    },
+    {
+      "module_title": "Creating Our Own & Best Practices",
+      "content": "Creating our own modules is pretty simple. We just create a Python file using the ```.py``` extension and defining the functions and variables as usual. In the same directory we can import the name of the file you created and use the functions as normal.<br><br>***Best Practices:***<br>Since we are essentially using other peoples code in our code, our code is now dependent on the library or module. Following best practices gives us peace of mind that our code will work how we want and so others can understand our code.<br>- Organize our imports at the top of our document.<br>- Use a virtial environment (like Anaconda) to isolate our installed libraries to not tamper with our other projects.<br>- Read documentation of the library so you understand what the functions are doing.<br>- Keep libraries up-to-date using ```pip install library_name --upgrade```.<br><br>Libraries are very powerful tools, if you come from a lower-level language like C you will find Python to be very automated due to it's giant library eco-system. Sometimes it may seem like we can import a library and our problem will be solved. Libraries can get out of hand so always follow best practice."
     }
   ],
   "exercise": "",
