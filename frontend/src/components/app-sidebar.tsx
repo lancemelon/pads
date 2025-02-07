@@ -1,17 +1,7 @@
 import * as React from "react";
-import {
-  BookOpen,
-  Bot,
-  Frame,
-  Map,
-  PieChart,
-  Settings2,
-  SquareTerminal,
-} from "lucide-react";
+import { SquareTerminal } from "lucide-react";
 
 import { NavMain } from "@/components/app-sidebar/nav-main";
-import { NavProjects } from "@/components/app-sidebar/nav-projects";
-import { NavUser } from "@/components/app-sidebar/nav-user";
 import { TeamSwitcher } from "@/components/app-sidebar/team-switcher";
 import {
   Sidebar,
