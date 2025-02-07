@@ -26,11 +26,14 @@ import topics from "../assets/topics.json";
 // This is sample data.
 // Migrate to either data base or seperate json file
 const data = {
-  user: {
-    name: "shadcn",
-    email: "m@example.com",
-    avatar: "/avatars/shadcn.jpg",
-  },
+  // TODO - Add Users
+  // user: {
+  //   name: "shadcn",
+  //   email: "m@example.com",
+  //   avatar: "/avatars/shadcn.jpg",
+  // },
+
+  // TODO - Add Different topics, Data Science, ML, Statistics, Linear Algebra, etc.
   topics: topics,
 
   // Items must me an array in format index: number, title: string, url: string (reference pyLessons.json)
@@ -42,42 +45,48 @@ const data = {
       isActive: true,
       items: lessons,
     },
-    {
-      title: "References",
-      url: "#",
-      icon: Bot,
-      items: [],
-    },
-    {
-      title: "Challenges",
-      url: "#",
-      icon: BookOpen,
-      items: [],
-    },
-    {
-      title: "FAQ's",
-      url: "#",
-      icon: Settings2,
-      items: [],
-    },
+
+    // TODO - Add downloadable Python Notebooks
+    // {
+    //   title: "References",
+    //   url: "#",
+    //   icon: Bot,
+    //   items: [],
+    // },
+
+    // TODO - Add Challeneges and FAQ's page
+    // {
+    //   title: "Challenges",
+    //   url: "#",
+    //   icon: BookOpen,
+    //   items: [],
+    // },
+    // {
+    //   title: "FAQ's",
+    //   url: "#",
+    //   icon: Settings2,
+    //   items: [],
+    // },
   ],
-  saved: [
-    {
-      name: "Hello World!",
-      url: "#",
-      icon: Frame,
-    },
-    {
-      name: "classes?",
-      url: "#",
-      icon: PieChart,
-    },
-    {
-      name: "Test.py",
-      url: "#",
-      icon: Map,
-    },
-  ],
+
+  // TODO - Saved files feature
+  // saved: [
+  //   {
+  //     name: "Hello World!",
+  //     url: "#",
+  //     icon: Frame,
+  //   },
+  //   {
+  //     name: "classes?",
+  //     url: "#",
+  //     icon: PieChart,
+  //   },
+  //   {
+  //     name: "Test.py",
+  //     url: "#",
+  //     icon: Map,
+  //   },
+  // ],
 };
 
 function AppSidebar({
@@ -98,11 +107,9 @@ function AppSidebar({
           curLesson={curLesson}
         />
         {/* TODO: Change to saved files (later down the road) */}
-        <NavProjects projects={data.saved} />
+        {/* <NavProjects projects={data.saved} /> */}
       </SidebarContent>
-      <SidebarFooter>
-        <NavUser user={data.user} />
-      </SidebarFooter>
+      <SidebarFooter>{/* <NavUser user={data.user} /> */}</SidebarFooter>
       <SidebarRail />
     </Sidebar>
   );

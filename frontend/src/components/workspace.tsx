@@ -29,11 +29,15 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
   return (
     <ResizablePanelGroup
       direction="vertical"
-      className="w-[100%] max-w-[calc(100vw-3rem)] h-[100%] rounded-lg border overflow-x-hidden"
+      className="w-full max-w-[calc(100vw-3rem)] h-full rounded-lg border border-gray-300 shadow-md overflow-x-hidden bg-white"
     >
-      <ResizablePanel defaultSize={75}>
-        <ResizablePanelGroup direction="horizontal">
-          <ResizablePanel defaultSize={20} maxSize={80}>
+      <ResizablePanel defaultSize={100} className="bg-white rounded-t-lg p-4">
+        <ResizablePanelGroup direction="horizontal" className="h-full">
+          <ResizablePanel
+            defaultSize={20}
+            maxSize={80}
+            className="h-full border-r border-gray-200 rounded-bl-lg p-2"
+          >
             <div className="h-full overflow-y-auto">
               <WorkSpacePanel
                 panelId={0}
@@ -45,8 +49,11 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
               />
             </div>
           </ResizablePanel>
-          <ResizableHandle withHandle />
-          <ResizablePanel defaultSize={80} className="h-full">
+          <ResizableHandle />
+          <ResizablePanel
+            defaultSize={80}
+            className="h-full bg-white rounded-br-lg p-2"
+          >
             <div className="h-full overflow-y-auto">
               <WorkSpacePanel
                 panelId={1}
@@ -59,19 +66,6 @@ function WorkSpace({ curLesson }: WorkSpaceProps) {
             </div>
           </ResizablePanel>
         </ResizablePanelGroup>
-      </ResizablePanel>
-      <ResizableHandle withHandle />
-      <ResizablePanel defaultSize={25}>
-        <div className="h-full overflow-y-auto">
-          <WorkSpacePanel
-            panelId={2}
-            component={tools[2]}
-            lesson={curLesson}
-            setComponent={updateTools}
-            setCodeOut={setCodeOut}
-            codeOut={codeOut}
-          />
-        </div>
       </ResizablePanel>
     </ResizablePanelGroup>
   );

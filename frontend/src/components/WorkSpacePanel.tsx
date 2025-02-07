@@ -65,7 +65,7 @@ const WorkSpacePanel = ({
         case "Notes":
           return <CurComp curLesson={lesson || 0} />;
         case "CodeEditor":
-          return <CurComp setCodeOut={setCodeOut} />;
+          return <CurComp setCodeOut={setCodeOut} codeOut={codeOut} />;
         case "Output":
           return <CurComp codeOut={codeOut} />;
         default:
@@ -76,14 +76,16 @@ const WorkSpacePanel = ({
   };
 
   return (
-    <div className="relative">
-      <ButtonGroup
-        buttons={icons}
-        cur={component}
-        setComponent={setComponent}
-        panelId={panelId}
-      />
-      {renderComponent()}
+    <div className="bg-white rounded">
+      <div className="relative">
+        <ButtonGroup
+          buttons={icons}
+          cur={component}
+          setComponent={setComponent}
+          panelId={panelId}
+        />
+        {renderComponent()}
+      </div>
     </div>
   );
 };
