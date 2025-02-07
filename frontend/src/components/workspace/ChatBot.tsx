@@ -12,7 +12,7 @@ const ChatBot = () => {
 
   async function askQuestion(prompt: string) {
     try {
-      const response = await axios.post("http://localhost:8080/api/ask", {
+      const response = await axios.post("https://pads.onrender.com/api/ask", {
         prompt: prompt,
       });
 

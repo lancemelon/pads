@@ -18,7 +18,7 @@ const CodeEditor = ({ setCodeOut, codeOut }: CodeEditorProps) => {
 
   async function runCode(code: string) {
     try {
-      const out = await axios.post("http://localhost:8080/api/runCode", {
+      const out = await axios.post("https://pads.onrender.com/api/runCode", {
         code: code,
       });
       console.log("Piston output: ", out.data.output);
