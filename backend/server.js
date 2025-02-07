@@ -9,7 +9,7 @@ dotenv.config();
 const apiKey = process.env.API_KEY;
 const piston = process.env.PISTON_ENDPOINT;
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 // Initialize the Express app by invoking express()
 const app = express();
