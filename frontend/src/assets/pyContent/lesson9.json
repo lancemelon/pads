@@ -1,0 +1,32 @@
+{
+    "title": "Chapter 9: Visualizing Data",
+    "modules": [
+      {
+        "module_title": "Overview",
+        "content": "In this lesson we will go over a very useful library in Python called Matplotlib. It is used for visualizations using Python to create charts and graphs for a variety of use-cases. It is especially useful in data exploration in the feild of data science and machine learning. We will also go into how it can be used along side other data libraries in Python."
+      },
+      {
+        "module_title": "How to import MatPlotLib",
+        "content": "To get started with any library in Python we must first import it into our project. To do this for MatPlotLib we do: <br> `import matplotlib.pyplot as plt` <br><br>To import a library we simply use the `import` keyword. When using MatPlotLib we import the `pyplot` module specifically (hence the .pyplot) to easily use that specific module which contains many different useful visualization tools. Lastly, we use an alias for the module because typing `matplotlib.pyplot` takes to much time. By convention we typically use the alias `plt`, but you can use whatever alias you want.<br><br>The general workflow of creating visualizations is to use the `plot` function then the `show` function to create and display. Below is a simple example of what this would look like:\n```python\n#Simple Syntax for MatPlotLib\nplt.plot([1, 2, 3], [4, 5, 6])\nplt.show()\n```"
+      },
+      {
+        "module_title": "new",
+        "content": ""
+      },
+      {
+        "module_title": "",
+        "content": ""
+      },
+      {
+        "module_title": "",
+        "content": ""
+      },
+      {
+        "module_title": "",
+        "content": ""
+      }
+    ],
+    "exercise": "",
+    "answer": ""
+  }
+  
