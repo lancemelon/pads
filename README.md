@@ -10,7 +10,7 @@ Pre-Reqs:
 * [Download Node.js](https://nodejs.org/en/download)
 * [Create GitHub Account](https://github.com/)
 
-Once installed [email me](mailto:youremail@example.com?subject=PADS%20Contribution&body=I%20want%20to%20help%20with%20the%20website.%20My%20username%20is:) me your GitHub username, or message me on [discord](https://discord.com/users/lancemelon) so I can add you as a contributer and create a branch.
+Once installed [email me](mailto:ljp24@students.uwf.edu?subject=PADS%20Contribution&body=I%20want%20to%20help%20with%20the%20website.%20My%20username%20is:) me your GitHub username, or message me on [discord](https://discord.com/users/lancemelon) so I can add you as a contributer and create a branch.
 
 **Cloning Repo:**
 1) Confirm and navigate to your specified branch. ![Branch button GitHub](images/branch_example.png)
