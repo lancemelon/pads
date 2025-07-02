@@ -1,5 +1,6 @@
 import * as React from "react";
 import { SquareTerminal } from "lucide-react";
+import { useState } from "react";
 
 import { NavMain } from "@/components/app-sidebar/nav-main";
 import { TeamSwitcher } from "@/components/app-sidebar/team-switcher";
@@ -27,37 +28,13 @@ const data = {
   topics: topics,
 
   // Items must me an array in format index: number, title: string, url: string (reference pyLessons.json)
-  navMain: [
-    {
-      title: "Notes",
-      url: "#",
-      icon: SquareTerminal,
-      isActive: true,
-      items: lessons,
-    },
-
-    // TODO - Add downloadable Python Notebooks
-    // {
-    //   title: "References",
-    //   url: "#",
-    //   icon: Bot,
-    //   items: [],
-    // },
-
-    // TODO - Add Challeneges and FAQ's page
-    // {
-    //   title: "Challenges",
-    //   url: "#",
-    //   icon: BookOpen,
-    //   items: [],
-    // },
-    // {
-    //   title: "FAQ's",
-    //   url: "#",
-    //   icon: Settings2,
-    //   items: [],
-    // },
-  ],
+  navMain: lessons.map((chapter, idx) => ({
+    title: chapter.chapter,
+    url: "#",
+    icon: SquareTerminal,
+    isActive: idx === 0,
+    items: chapter.lessons,
+  })),
 
   // TODO - Saved files feature
   // saved: [
@@ -84,6 +61,17 @@ function AppSidebar({
   curLesson,
   ...props
 }: React.ComponentProps<typeof Sidebar>) {
+  const [openFolders, setOpenFolders] = useState<{ [key: string]: boolean }>(
+    {}
+  );
+
+  const toggleFolder = (chapter: string) => {
+    setOpenFolders((prev) => ({
+      ...prev,
+      [chapter]: !prev[chapter],
+    }));
+  };
+
   return (
     <Sidebar collapsible="icon" {...props}>
       <SidebarHeader>
