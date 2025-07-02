@@ -1,52 +1,62 @@
 [
   {
-    "index": 0,
-    "title": "Intro to Python",
-    "url": "#"
+    "chapter": "Chapter 2 - Python Basics",
+    "lessons": [
+      {
+        "index": 0,
+        "title": "Intro to Python",
+        "url": "#"
+      },
+      {
+        "index": 1,
+        "title": "Operators and I/O",
+        "url": "#"
+      },
+      {
+        "index": 2,
+        "title": "Conditionals and Loops",
+        "url": "#"
+      },
+      {
+        "index": 3,
+        "title": "Data Structures",
+        "url": "#"
+      },
+      {
+        "index": 4,
+        "title": "Using Data Structures",
+        "url": "#"
+      },
+      {
+        "index": 5,
+        "title": "Functions",
+        "url": "#"
+      },
+      {
+        "index": 6,
+        "title": "Modules and Libraries",
+        "url": "#"
+      },
+      {
+        "index": 7,
+        "title": "Object Oriented Programming",
+        "url": "#"
+      }
+    ]
   },
   {
-    "index": 1,
-    "title": "Operators and I/O",
-    "url": "#"
-  },
-  {
-    "index": 2,
-    "title": "Conditionals and Loops",
-    "url": "#"
-  },
-  {
-    "index": 3,
-    "title": "Data Structures",
-    "url": "#"
-  },
-  {
-    "index": 4,
-    "title": "Using Data Structures",
-    "url": "#"
-  },
-  {
-    "index": 5,
-    "title": "Functions",
-    "url": "#"
-  },
-  {
-    "index": 6,
-    "title": "Modules and Libraries",
-    "url": "#"
-  },
-  {
-    "index": 7,
-    "title": "Object Oriented Programming",
-    "url": "#"
-  },
-  {
-    "index": 8,
-    "title": "MatPlotLib",
-    "url": "#"
-  },
-  {
-    "index": 9,
-    "title": "test",
-    "url": "#"
+    "chapter": "Chapter 3 - Visualizing Data",
+    "lessons": [
+      {
+        "index": 8,
+        "title": "MatPlotLib",
+        "url": "#"
+      },
+      {
+        "index": 9,
+        "title": "test",
+        "url": "#"
+      }
+    ]
   }
 ]
