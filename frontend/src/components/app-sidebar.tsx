@@ -1,6 +1,5 @@
 import * as React from "react";
 import { SquareTerminal } from "lucide-react";
-import { useState } from "react";
 
 import { NavMain } from "@/components/app-sidebar/nav-main";
 import { TeamSwitcher } from "@/components/app-sidebar/team-switcher";
