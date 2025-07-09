@@ -61,16 +61,6 @@ function AppSidebar({
   curLesson,
   ...props
 }: React.ComponentProps<typeof Sidebar>) {
-  const [openFolders, setOpenFolders] = useState<{ [key: string]: boolean }>(
-    {}
-  );
-
-  const toggleFolder = (chapter: string) => {
-    setOpenFolders((prev) => ({
-      ...prev,
-      [chapter]: !prev[chapter],
-    }));
-  };
 
   return (
     <Sidebar collapsible="icon" {...props}>
